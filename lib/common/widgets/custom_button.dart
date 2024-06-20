@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:freemo_test/constants/color.dart';
 import 'package:freemo_test/constants/global.dart';
@@ -13,7 +12,10 @@ class CustomButton extends StatelessWidget {
       this.color = AppColors.primary,
       this.textColor = AppColors.background,
       this.fontSize = 20,
-      this.isTap = true});
+      this.isTap = true,
+      this.weight=FontWeight.bold
+      
+      });
   final String text;
   final bool isLoading;
   final double width;
@@ -22,6 +24,7 @@ class CustomButton extends StatelessWidget {
   final Color textColor;
   final double fontSize;
   final bool isTap;
+  final FontWeight weight;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +49,7 @@ class CustomButton extends StatelessWidget {
                   fontSize: fontSize,
                   fontFamily: sourceSans,
                   color: textColor,
-                  fontWeight: FontWeight.w600),
+                  fontWeight: weight),
             ),
     );
   }

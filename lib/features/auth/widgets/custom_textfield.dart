@@ -73,26 +73,24 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                     : null,
                 hintText: widget.hintText,
                 hintStyle:
-                    const TextStyle(color: AppColors.onBackground, fontFamily: sourceSans),
+                    const TextStyle(color: AppColors.gray, fontFamily: sourceSans, fontSize: 13),
                 filled: true,
-                fillColor: AppColors.defaultBorder,
-                focusedBorder: const OutlineInputBorder(
+                fillColor: AppColors.background,
+                focusedBorder:  OutlineInputBorder(
                   borderSide: 
                        BorderSide.none,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                  ),
+                  borderRadius: BorderRadius.circular(10)
                 ),
-                enabledBorder: const OutlineInputBorder(
-                  borderSide: BorderSide(
-                      width: 0.2,
+                enabledBorder:  OutlineInputBorder(
+                  borderSide: const BorderSide(
+                      width: 0.5,
                       color: AppColors.defaultBorder),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                  ),
+                 borderRadius: BorderRadius.circular(10)
                 ),
+                prefixIcon: const Icon(
+                                Icons.lock_outline,
+                                color: AppColors.gray,
+                              ),
                 suffixIcon: widget.isPassword
                     ? IconButton(
                         onPressed: () {
@@ -102,11 +100,11 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                         icon: widget.selected
                             ? const Icon(
                                 Icons.visibility_off_outlined,
-                                color: AppColors.defaultBorder,
+                                color: AppColors.onBackground,
                               )
                             : const Icon(
                                 Icons.visibility_outlined,
-                                color: AppColors.defaultBorder,
+                                color: AppColors.onBackground,
                               ))
                     : null,
                 errorBorder: const OutlineInputBorder(

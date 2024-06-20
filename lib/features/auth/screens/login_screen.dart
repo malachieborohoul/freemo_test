@@ -120,6 +120,30 @@ class _LoginScreenState extends State<LoginScreen> {
                           const SizedBox(
                             height: AppPadding.miniSpacer,
                           ),
+                            Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            const CustomRegularTitle(
+                              title: "Already have an account,",
+                              family: sourceSans,
+                              size: AppPadding.miniSpacer,
+                              color: AppColors.onBackground,
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushReplacementNamed(
+                                    context, LoginScreen.routeName);
+                              },
+                              child: const Text(
+                                "Sign in",
+                                style: TextStyle(
+                                    color: AppColors.primary,
+                                    ),
+                              ),
+                            )
+                          ],
+                        ),
                         ],
                       ),
                     ),
