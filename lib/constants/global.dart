@@ -1,10 +1,16 @@
 
 
-String uri = "http://50.116.33.87:4000/business-lounge-api/v1";
+import 'package:freemo_test/features/auth/services/country_service.dart';
+
+String uri = "";
 
 const String qrcode = "6385e2e0ad3b73ad4d402699";
 
 const String playfair = "Playfair Display";
 
 const String sourceSans = "Source Sans 3";
+
+
+CountryService countryService = CountryService();
+
 

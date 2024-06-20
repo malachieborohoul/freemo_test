@@ -1,0 +1,1363 @@
+
+[
+  {
+    "name": "Afghanistan",
+    "abbreviation": "AF",
+    "flag": "🇦🇫",
+    "phone_code": "+93",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Albania",
+    "abbreviation": "AL",
+    "flag": "🇦🇱",
+    "phone_code": "+355",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Algeria",
+    "abbreviation": "DZ",
+    "flag": "🇩🇿",
+    "phone_code": "+213",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Andorra",
+    "abbreviation": "AD",
+    "flag": "🇦🇩",
+    "phone_code": "+376",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Angola",
+    "abbreviation": "AO",
+    "flag": "🇦🇴",
+    "phone_code": "+244",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Argentina",
+    "abbreviation": "AR",
+    "flag": "🇦🇷",
+    "phone_code": "+54",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Armenia",
+    "abbreviation": "AM",
+    "flag": "🇦🇲",
+    "phone_code": "+374",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Australia",
+    "abbreviation": "AU",
+    "flag": "🇦🇺",
+    "phone_code": "+61",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Austria",
+    "abbreviation": "AT",
+    "flag": "🇦🇹",
+    "phone_code": "+43",
+    "max_phone_length": 13
+  },
+  {
+    "name": "Azerbaijan",
+    "abbreviation": "AZ",
+    "flag": "🇦🇿",
+    "phone_code": "+994",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Bahamas",
+    "abbreviation": "BS",
+    "flag": "🇧🇸",
+    "phone_code": "+1-242",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Bahrain",
+    "abbreviation": "BH",
+    "flag": "🇧🇭",
+    "phone_code": "+973",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Bangladesh",
+    "abbreviation": "BD",
+    "flag": "🇧🇩",
+    "phone_code": "+880",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Barbados",
+    "abbreviation": "BB",
+    "flag": "🇧🇧",
+    "phone_code": "+1-246",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Belarus",
+    "abbreviation": "BY",
+    "flag": "🇧🇾",
+    "phone_code": "+375",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Belgium",
+    "abbreviation": "BE",
+    "flag": "🇧🇪",
+    "phone_code": "+32",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Belize",
+    "abbreviation": "BZ",
+    "flag": "🇧🇿",
+    "phone_code": "+501",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Benin",
+    "abbreviation": "BJ",
+    "flag": "🇧🇯",
+    "phone_code": "+229",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Bhutan",
+    "abbreviation": "BT",
+    "flag": "🇧🇹",
+    "phone_code": "+975",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Bolivia",
+    "abbreviation": "BO",
+    "flag": "🇧🇴",
+    "phone_code": "+591",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "abbreviation": "BA",
+    "flag": "🇧🇦",
+    "phone_code": "+387",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Botswana",
+    "abbreviation": "BW",
+    "flag": "🇧🇼",
+    "phone_code": "+267",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Brazil",
+    "abbreviation": "BR",
+    "flag": "🇧🇷",
+    "phone_code": "+55",
+    "max_phone_length": 11
+  },
+  {
+    "name": "Brunei",
+    "abbreviation": "BN",
+    "flag": "🇧🇳",
+    "phone_code": "+673",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Bulgaria",
+    "abbreviation": "BG",
+    "flag": "🇧🇬",
+    "phone_code": "+359",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Burkina Faso",
+    "abbreviation": "BF",
+    "flag": "🇧🇫",
+    "phone_code": "+226",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Burundi",
+    "abbreviation": "BI",
+    "flag": "🇧🇮",
+    "phone_code": "+257",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Cambodia",
+    "abbreviation": "KH",
+    "flag": "🇰🇭",
+    "phone_code": "+855",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Cameroon",
+    "abbreviation": "CM",
+    "flag": "🇨🇲",
+    "phone_code": "+237",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Canada",
+    "abbreviation": "CA",
+    "flag": "🇨🇦",
+    "phone_code": "+1",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Cape Verde",
+    "abbreviation": "CV",
+    "flag": "🇨🇻",
+    "phone_code": "+238",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Central African Republic",
+    "abbreviation": "CF",
+    "flag": "🇨🇫",
+    "phone_code": "+236",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Chad",
+    "abbreviation": "TD",
+    "flag": "🇹🇩",
+    "phone_code": "+235",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Chile",
+    "abbreviation": "CL",
+    "flag": "🇨🇱",
+    "phone_code": "+56",
+    "max_phone_length": 9
+  },
+  {
+    "name": "China",
+    "abbreviation": "CN",
+    "flag": "🇨🇳",
+    "phone_code": "+86",
+    "max_phone_length": 11
+  },
+  {
+    "name": "Colombia",
+    "abbreviation": "CO",
+    "flag": "🇨🇴",
+    "phone_code": "+57",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Comoros",
+    "abbreviation": "KM",
+    "flag": "🇰🇲",
+    "phone_code": "+269",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Congo",
+    "abbreviation": "CG",
+    "flag": "🇨🇬",
+    "phone_code": "+242",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Congo (DRC)",
+    "abbreviation": "CD",
+    "flag": "🇨🇩",
+    "phone_code": "+243",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Costa Rica",
+    "abbreviation": "CR",
+    "flag": "🇨🇷",
+    "phone_code": "+506",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Croatia",
+    "abbreviation": "HR",
+    "flag": "🇭🇷",
+    "phone_code": "+385",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Cuba",
+    "abbreviation": "CU",
+    "flag": "🇨🇺",
+    "phone_code": "+53",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Cyprus",
+    "abbreviation": "CY",
+    "flag": "🇨🇾",
+    "phone_code": "+357",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Czech Republic",
+    "abbreviation": "CZ",
+    "flag": "🇨🇿",
+    "phone_code": "+420",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Denmark",
+    "abbreviation": "DK",
+    "flag": "🇩🇰",
+    "phone_code": "+45",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Djibouti",
+    "abbreviation": "DJ",
+    "flag": "🇩🇯",
+    "phone_code": "+253",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Dominica",
+    "abbreviation": "DM",
+    "flag": "🇩🇲",
+    "phone_code": "+1-767",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Dominican Republic",
+    "abbreviation": "DO",
+    "flag": "🇩🇴",
+    "phone_code": "+1-809",
+    "max_phone_length": 10
+  },
+  {
+    "name": "East Timor",
+    "abbreviation": "TL",
+    "flag": "🇹🇱",
+    "phone_code": "+670",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Ecuador",
+    "abbreviation": "EC",
+    "flag": "🇪🇨",
+    "phone_code": "+593",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Egypt",
+    "abbreviation": "EG",
+    "flag": "🇪🇬",
+    "phone_code": "+20",
+    "max_phone_length": 10
+  },
+  {
+    "name": "El Salvador",
+    "abbreviation": "SV",
+    "flag": "🇸🇻",
+    "phone_code": "+503",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Equatorial Guinea",
+    "abbreviation": "GQ",
+    "flag": "🇬🇶",
+    "phone_code": "+240",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Eritrea",
+    "abbreviation": "ER",
+    "flag": "🇪🇷",
+    "phone_code": "+291",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Estonia",
+    "abbreviation": "EE",
+    "flag": "🇪🇪",
+    "phone_code": "+372",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Eswatini",
+    "abbreviation": "SZ",
+    "flag": "🇸🇿",
+    "phone_code": "+268",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Ethiopia",
+    "abbreviation": "ET",
+    "flag": "🇪🇹",
+    "phone_code": "+251",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Fiji",
+    "abbreviation": "FJ",
+    "flag": "🇫🇯",
+    "phone_code": "+679",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Finland",
+    "abbreviation": "FI",
+    "flag": "🇫🇮",
+    "phone_code": "+358",
+    "max_phone_length": 12
+  },
+  {
+    "name": "France",
+    "abbreviation": "FR",
+    "flag": "🇫🇷",
+    "phone_code": "+33",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Gabon",
+    "abbreviation": "GA",
+    "flag": "🇬🇦",
+    "phone_code": "+241",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Gambia",
+    "abbreviation": "GM",
+    "flag": "🇬🇲",
+    "phone_code": "+220",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Georgia",
+    "abbreviation": "GE",
+    "flag": "🇬🇪",
+    "phone_code": "+995",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Germany",
+    "abbreviation": "DE",
+    "flag": "🇩🇪",
+    "phone_code": "+49",
+    "max_phone_length": 11
+  },
+  {
+    "name": "Ghana",
+    "abbreviation": "GH",
+    "flag": "🇬🇭",
+    "phone_code": "+233",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Greece",
+    "abbreviation": "GR",
+    "flag": "🇬🇷",
+    "phone_code": "+30",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Grenada",
+    "abbreviation": "GD",
+    "flag": "🇬🇩",
+    "phone_code": "+1-473",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Guatemala",
+    "abbreviation": "GT",
+    "flag": "🇬🇹",
+    "phone_code": "+502",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Guinea",
+    "abbreviation": "GN",
+    "flag": "🇬🇳",
+    "phone_code": "+224",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Guinea-Bissau",
+    "abbreviation": "GW",
+    "flag": "🇬🇼",
+    "phone_code": "+245",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Guyana",
+    "abbreviation": "GY",
+    "flag": "🇬🇾",
+    "phone_code": "+592",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Haiti",
+    "abbreviation": "HT",
+    "flag": "🇭🇹",
+    "phone_code": "+509",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Honduras",
+    "abbreviation": "HN",
+    "flag": "🇭🇳",
+    "phone_code": "+504",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Hungary",
+    "abbreviation": "HU",
+    "flag": "🇭🇺",
+    "phone_code": "+36",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Iceland",
+    "abbreviation": "IS",
+    "flag": "🇮🇸",
+    "phone_code": "+354",
+    "max_phone_length": 7
+  },
+  {
+    "name": "India",
+    "abbreviation": "IN",
+    "flag": "🇮🇳",
+    "phone_code": "+91",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Indonesia",
+    "abbreviation": "ID",
+    "flag": "🇮🇩",
+    "phone_code": "+62",
+    "max_phone_length": 11
+  },
+  {
+    "name": "Iran",
+    "abbreviation": "IR",
+    "flag": "🇮🇷",
+    "phone_code": "+98",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Iraq",
+    "abbreviation": "IQ",
+    "flag": "🇮🇶",
+    "phone_code": "+964",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Ireland",
+    "abbreviation": "IE",
+    "flag": "🇮🇪",
+    "phone_code": "+353",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Israel",
+    "abbreviation": "IL",
+    "flag": "🇮🇱",
+    "phone_code": "+972",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Italy",
+    "abbreviation": "IT",
+    "flag": "🇮🇹",
+    "phone_code": "+39",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Jamaica",
+    "abbreviation": "JM",
+    "flag": "🇯🇲",
+    "phone_code": "+1-876",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Japan",
+    "abbreviation": "JP",
+    "flag": "🇯🇵",
+    "phone_code": "+81",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Jordan",
+    "abbreviation": "JO",
+    "flag": "🇯🇴",
+    "phone_code": "+962",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Kazakhstan",
+    "abbreviation": "KZ",
+    "flag": "🇰🇿",
+    "phone_code": "+7",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Kenya",
+    "abbreviation": "KE",
+    "flag": "🇰🇪",
+    "phone_code": "+254",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Kiribati",
+    "abbreviation": "KI",
+    "flag": "🇰🇮",
+    "phone_code": "+686",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Kuwait",
+    "abbreviation": "KW",
+    "flag": "🇰🇼",
+    "phone_code": "+965",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Kyrgyzstan",
+    "abbreviation": "KG",
+    "flag": "🇰🇬",
+    "phone_code": "+996",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Laos",
+    "abbreviation": "LA",
+    "flag": "🇱🇦",
+    "phone_code": "+856",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Latvia",
+    "abbreviation": "LV",
+    "flag": "🇱🇻",
+    "phone_code": "+371",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Lebanon",
+    "abbreviation": "LB",
+    "flag": "🇱🇧",
+    "phone_code": "+961",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Lesotho",
+    "abbreviation": "LS",
+    "flag": "🇱🇸",
+    "phone_code": "+266",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Liberia",
+    "abbreviation": "LR",
+    "flag": "🇱🇷",
+    "phone_code": "+231",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Libya",
+    "abbreviation": "LY",
+    "flag": "🇱🇾",
+    "phone_code": "+218",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Liechtenstein",
+    "abbreviation": "LI",
+    "flag": "🇱🇮",
+    "phone_code": "+423",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Lithuania",
+    "abbreviation": "LT",
+    "flag": "🇱🇹",
+    "phone_code": "+370",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Luxembourg",
+    "abbreviation": "LU",
+    "flag": "🇱🇺",
+    "phone_code": "+352",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Madagascar",
+    "abbreviation": "MG",
+    "flag": "🇲🇬",
+    "phone_code": "+261",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Malawi",
+    "abbreviation": "MW",
+    "flag": "🇲🇼",
+    "phone_code": "+265",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Malaysia",
+    "abbreviation": "MY",
+    "flag": "🇲🇾",
+    "phone_code": "+60",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Maldives",
+    "abbreviation": "MV",
+    "flag": "🇲🇻",
+    "phone_code": "+960",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Mali",
+    "abbreviation": "ML",
+    "flag": "🇲🇱",
+    "phone_code": "+223",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Malta",
+    "abbreviation": "MT",
+    "flag": "🇲🇹",
+    "phone_code": "+356",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Marshall Islands",
+    "abbreviation": "MH",
+    "flag": "🇲🇭",
+    "phone_code": "+692",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Mauritania",
+    "abbreviation": "MR",
+    "flag": "🇲🇷",
+    "phone_code": "+222",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Mauritius",
+    "abbreviation": "MU",
+    "flag": "🇲🇺",
+    "phone_code": "+230",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Mexico",
+    "abbreviation": "MX",
+    "flag": "🇲🇽",
+    "phone_code": "+52",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Micronesia",
+    "abbreviation": "FM",
+    "flag": "🇫🇲",
+    "phone_code": "+691",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Moldova",
+    "abbreviation": "MD",
+    "flag": "🇲🇩",
+    "phone_code": "+373",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Monaco",
+    "abbreviation": "MC",
+    "flag": "🇲🇨",
+    "phone_code": "+377",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Mongolia",
+    "abbreviation": "MN",
+    "flag": "🇲🇳",
+    "phone_code": "+976",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Montenegro",
+    "abbreviation": "ME",
+    "flag": "🇲🇪",
+    "phone_code": "+382",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Morocco",
+    "abbreviation": "MA",
+    "flag": "🇲🇦",
+    "phone_code": "+212",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Mozambique",
+    "abbreviation": "MZ",
+    "flag": "🇲🇿",
+    "phone_code": "+258",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Myanmar",
+    "abbreviation": "MM",
+    "flag": "🇲🇲",
+    "phone_code": "+95",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Namibia",
+    "abbreviation": "NA",
+    "flag": "🇳🇦",
+    "phone_code": "+264",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Nauru",
+    "abbreviation": "NR",
+    "flag": "🇳🇷",
+    "phone_code": "+674",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Nepal",
+    "abbreviation": "NP",
+    "flag": "🇳🇵",
+    "phone_code": "+977",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Netherlands",
+    "abbreviation": "NL",
+    "flag": "🇳🇱",
+    "phone_code": "+31",
+    "max_phone_length": 9
+  },
+  {
+    "name": "New Zealand",
+    "abbreviation": "NZ",
+    "flag": "🇳🇿",
+    "phone_code": "+64",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Nicaragua",
+    "abbreviation": "NI",
+    "flag": "🇳🇮",
+    "phone_code": "+505",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Niger",
+    "abbreviation": "NE",
+    "flag": "🇳🇪",
+    "phone_code": "+227",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Nigeria",
+    "abbreviation": "NG",
+    "flag": "🇳🇬",
+    "phone_code": "+234",
+    "max_phone_length": 10
+  },
+  {
+    "name": "North Korea",
+    "abbreviation": "KP",
+    "flag": "🇰🇵",
+    "phone_code": "+850",
+    "max_phone_length": 10
+  },
+  {
+    "name": "North Macedonia",
+    "abbreviation": "MK",
+    "flag": "🇲🇰",
+    "phone_code": "+389",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Norway",
+    "abbreviation": "NO",
+    "flag": "🇳🇴",
+    "phone_code": "+47",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Oman",
+    "abbreviation": "OM",
+    "flag": "🇴🇲",
+    "phone_code": "+968",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Pakistan",
+    "abbreviation": "PK",
+    "flag": "🇵🇰",
+    "phone_code": "+92",
+    "max_phone_length": 11
+  },
+  {
+    "name": "Palau",
+    "abbreviation": "PW",
+    "flag": "🇵🇼",
+    "phone_code": "+680",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Palestine",
+    "abbreviation": "PS",
+    "flag": "🇵🇸",
+    "phone_code": "+970",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Panama",
+    "abbreviation": "PA",
+    "flag": "🇵🇦",
+    "phone_code": "+507",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Papua New Guinea",
+    "abbreviation": "PG",
+    "flag": "🇵🇬",
+    "phone_code": "+675",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Paraguay",
+    "abbreviation": "PY",
+    "flag": "🇵🇾",
+    "phone_code": "+595",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Peru",
+    "abbreviation": "PE",
+    "flag": "🇵🇪",
+    "phone_code": "+51",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Philippines",
+    "abbreviation": "PH",
+    "flag": "🇵🇭",
+    "phone_code": "+63",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Poland",
+    "abbreviation": "PL",
+    "flag": "🇵🇱",
+    "phone_code": "+48",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Portugal",
+    "abbreviation": "PT",
+    "flag": "🇵🇹",
+    "phone_code": "+351",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Qatar",
+    "abbreviation": "QA",
+    "flag": "🇶🇦",
+    "phone_code": "+974",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Romania",
+    "abbreviation": "RO",
+    "flag": "🇷🇴",
+    "phone_code": "+40",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Russia",
+    "abbreviation": "RU",
+    "flag": "🇷🇺",
+    "phone_code": "+7",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Rwanda",
+    "abbreviation": "RW",
+    "flag": "🇷🇼",
+    "phone_code": "+250",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "abbreviation": "KN",
+    "flag": "🇰🇳",
+    "phone_code": "+1-869",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Saint Lucia",
+    "abbreviation": "LC",
+    "flag": "🇱🇨",
+    "phone_code": "+1-758",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "abbreviation": "VC",
+    "flag": "🇻🇨",
+    "phone_code": "+1-784",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Samoa",
+    "abbreviation": "WS",
+    "flag": "🇼🇸",
+    "phone_code": "+685",
+    "max_phone_length": 7
+  },
+  {
+    "name": "San Marino",
+    "abbreviation": "SM",
+    "flag": "🇸🇲",
+    "phone_code": "+378",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "abbreviation": "ST",
+    "flag": "🇸🇹",
+    "phone_code": "+239",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Saudi Arabia",
+    "abbreviation": "SA",
+    "flag": "🇸🇦",
+    "phone_code": "+966",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Senegal",
+    "abbreviation": "SN",
+    "flag": "🇸🇳",
+    "phone_code": "+221",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Serbia",
+    "abbreviation": "RS",
+    "flag": "🇷🇸",
+    "phone_code": "+381",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Seychelles",
+    "abbreviation": "SC",
+    "flag": "🇸🇨",
+    "phone_code": "+248",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Sierra Leone",
+    "abbreviation": "SL",
+    "flag": "🇸🇱",
+    "phone_code": "+232",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Singapore",
+    "abbreviation": "SG",
+    "flag": "🇸🇬",
+    "phone_code": "+65",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Slovakia",
+    "abbreviation": "SK",
+    "flag": "🇸🇰",
+    "phone_code": "+421",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Slovenia",
+    "abbreviation": "SI",
+    "flag": "🇸🇮",
+    "phone_code": "+386",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Solomon Islands",
+    "abbreviation": "SB",
+    "flag": "🇸🇧",
+    "phone_code": "+677",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Somalia",
+    "abbreviation": "SO",
+    "flag": "🇸🇴",
+    "phone_code": "+252",
+    "max_phone_length": 8
+  },
+  {
+    "name": "South Africa",
+    "abbreviation": "ZA",
+    "flag": "🇿🇦",
+    "phone_code": "+27",
+    "max_phone_length": 9
+  },
+  {
+    "name": "South Korea",
+    "abbreviation": "KR",
+    "flag": "🇰🇷",
+    "phone_code": "+82",
+    "max_phone_length": 10
+  },
+  {
+    "name": "South Sudan",
+    "abbreviation": "SS",
+    "flag": "🇸🇸",
+    "phone_code": "+211",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Spain",
+    "abbreviation": "ES",
+    "flag": "🇪🇸",
+    "phone_code": "+34",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Sri Lanka",
+    "abbreviation": "LK",
+    "flag": "🇱🇰",
+    "phone_code": "+94",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Sudan",
+    "abbreviation": "SD",
+    "flag": "🇸🇩",
+    "phone_code": "+249",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Suriname",
+    "abbreviation": "SR",
+    "flag": "🇸🇷",
+    "phone_code": "+597",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Sweden",
+    "abbreviation": "SE",
+    "flag": "🇸🇪",
+    "phone_code": "+46",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Switzerland",
+    "abbreviation": "CH",
+    "flag": "🇨🇭",
+    "phone_code": "+41",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Syria",
+    "abbreviation": "SY",
+    "flag": "🇸🇾",
+    "phone_code": "+963",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Taiwan",
+    "abbreviation": "TW",
+    "flag": "🇹🇼",
+    "phone_code": "+886",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Tajikistan",
+    "abbreviation": "TJ",
+    "flag": "🇹🇯",
+    "phone_code": "+992",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Tanzania",
+    "abbreviation": "TZ",
+    "flag": "🇹🇿",
+    "phone_code": "+255",
+    "max_phone_length":
+
+ 9
+  },
+  {
+    "name": "Thailand",
+    "abbreviation": "TH",
+    "flag": "🇹🇭",
+    "phone_code": "+66",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Togo",
+    "abbreviation": "TG",
+    "flag": "🇹🇬",
+    "phone_code": "+228",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Tonga",
+    "abbreviation": "TO",
+    "flag": "🇹🇴",
+    "phone_code": "+676",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "abbreviation": "TT",
+    "flag": "🇹🇹",
+    "phone_code": "+1-868",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Tunisia",
+    "abbreviation": "TN",
+    "flag": "🇹🇳",
+    "phone_code": "+216",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Turkey",
+    "abbreviation": "TR",
+    "flag": "🇹🇷",
+    "phone_code": "+90",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Turkmenistan",
+    "abbreviation": "TM",
+    "flag": "🇹🇲",
+    "phone_code": "+993",
+    "max_phone_length": 8
+  },
+  {
+    "name": "Tuvalu",
+    "abbreviation": "TV",
+    "flag": "🇹🇻",
+    "phone_code": "+688",
+    "max_phone_length": 6
+  },
+  {
+    "name": "Uganda",
+    "abbreviation": "UG",
+    "flag": "🇺🇬",
+    "phone_code": "+256",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Ukraine",
+    "abbreviation": "UA",
+    "flag": "🇺🇦",
+    "phone_code": "+380",
+    "max_phone_length": 9
+  },
+  {
+    "name": "United Arab Emirates",
+    "abbreviation": "AE",
+    "flag": "🇦🇪",
+    "phone_code": "+971",
+    "max_phone_length": 9
+  },
+  {
+    "name": "United Kingdom",
+    "abbreviation": "GB",
+    "flag": "🇬🇧",
+    "phone_code": "+44",
+    "max_phone_length": 10
+  },
+  {
+    "name": "United States",
+    "abbreviation": "US",
+    "flag": "🇺🇸",
+    "phone_code": "+1",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Uruguay",
+    "abbreviation": "UY",
+    "flag": "🇺🇾",
+    "phone_code": "+598",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Uzbekistan",
+    "abbreviation": "UZ",
+    "flag": "🇺🇿",
+    "phone_code": "+998",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Vanuatu",
+    "abbreviation": "VU",
+    "flag": "🇻🇺",
+    "phone_code": "+678",
+    "max_phone_length": 7
+  },
+  {
+    "name": "Vatican City",
+    "abbreviation": "VA",
+    "flag": "🇻🇦",
+    "phone_code": "+39-06",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Venezuela",
+    "abbreviation": "VE",
+    "flag": "🇻🇪",
+    "phone_code": "+58",
+    "max_phone_length": 10
+  },
+  {
+    "name": "Vietnam",
+    "abbreviation": "VN",
+    "flag": "🇻🇳",
+    "phone_code": "+84",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Yemen",
+    "abbreviation": "YE",
+    "flag": "🇾🇪",
+    "phone_code": "+967",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Zambia",
+    "abbreviation": "ZM",
+    "flag": "🇿🇲",
+    "phone_code": "+260",
+    "max_phone_length": 9
+  },
+  {
+    "name": "Zimbabwe",
+    "abbreviation": "ZW",
+    "flag": "🇿🇼",
+    "phone_code": "+263",
+    "max_phone_length": 9
+  }
+]
