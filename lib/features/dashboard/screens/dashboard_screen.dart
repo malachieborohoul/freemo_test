@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:freemo_test/common/widgets/custom_regular_title.dart';
 import 'package:freemo_test/constants/color.dart';
+import 'package:freemo_test/constants/global.dart';
 import 'package:freemo_test/constants/padding.dart';
 import 'package:freemo_test/constants/utils.dart';
 import 'package:freemo_test/features/dashboard/widgets/custom_card.dart';
+import 'package:freemo_test/models/article.dart';
 
 enum Auth { register, login }
 
@@ -16,9 +18,17 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
-  bool isLoading = false;
+  late Future<List<Article>> articles;
 
-  void registerUser() {}
+  void getAllArticles() {
+    articles = articleService.getAllArticles(context);
+  }
+
+  @override
+  void initState() {
+    getAllArticles();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -147,23 +157,38 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             const SizedBox(
                               width: AppPadding.miniSpacer,
                             ),
-                            const Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                CustomRegularTitle(
-                                  title: "TM Soluions",
-                                  size: AppPadding.miniSpacer + 5,
-                                ),
-                                const SizedBox(
-                                  height: AppPadding.miniSpacer,
-                                ),
-                                CustomRegularTitle(
-                                  title: "Come lets ove be ddgud",
-                                  weight: FontWeight.normal,
-                                  size: AppPadding.miniSpacer,
-                                ),
-                              ],
-                            )
+                            Expanded(
+                                child: FutureBuilder(
+                                    future: articles,
+                                    builder: (context, snapshot) {
+                                      if (snapshot.connectionState ==
+                                          ConnectionState.done) {
+                                        return ListView.builder(
+                                          shrinkWrap: true,
+                                            itemBuilder: (context, i) {
+                                          return const Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              CustomRegularTitle(
+                                                title: "TM Soluions",
+                                                size: AppPadding.miniSpacer + 5,
+                                              ),
+                                              const SizedBox(
+                                                height: AppPadding.miniSpacer,
+                                              ),
+                                              CustomRegularTitle(
+                                                title: "Come lets ove be ddgud",
+                                                weight: FontWeight.normal,
+                                                size: AppPadding.miniSpacer,
+                                              ),
+                                            ],
+                                          );
+                                        });
+                                      } else {
+                                        return CircularProgressIndicator();
+                                      }
+                                    }))
                           ],
                         ),
                       )),

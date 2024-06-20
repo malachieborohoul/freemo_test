@@ -34,7 +34,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool isLoading = false;
 
   void registerUser() {}
-  Country selectedCountry = Country(name: "", abbreviation: "", flag: "", phoneCode: "", maxPhoneLength: 0);
+  Country selectedCountry = Country(
+      name: "", abbreviation: "", flag: "", phoneCode: "", maxPhoneLength: 0);
   @override
   void dispose() {
     super.dispose();
@@ -131,58 +132,96 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const SizedBox(
                           height: AppPadding.miniSpacer - 5,
                         ),
-                        GestureDetector(
-                          onTap: () async {
-                            var country = await Navigator.pushNamed(
+                        Container(
+                          height: AppPadding.appPadding + 30,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border:
+                                Border.all(color: AppColors.defaultBorder),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: double.infinity,
+                                decoration: BoxDecoration(
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomLeft: Radius.circular(10),
+                                  ),
+                                  color: AppColors.defaultBorder
+                                      .withOpacity(0.4),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(
+                                      AppPadding.miniSpacer - 5),
+                                  child: GestureDetector(
+                                    onTap: ()async{
+                                         var country = await Navigator.pushNamed(
                                 context, SearchCountriesSreen.routeName);
 
-                                   if (country != null && country is Country) {
-      selectedCountry  = country;
-      
-      setState(() {
-        // Utiliser country comme un objet de type Country ici
-      });
-    }
-                          },
-                          child: Container(
-                            height: AppPadding.appPadding + 30,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              border:
-                                  Border.all(color: AppColors.defaultBorder),
-                            ),
-                            child: Row(
-                              children: [
-                                Container(
-                                  height: double.infinity,
-                                  decoration: BoxDecoration(
-                                    borderRadius: const BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                      bottomLeft: Radius.circular(10),
-                                    ),
-                                    color: AppColors.defaultBorder
-                                        .withOpacity(0.4),
-                                  ),
-                                  child:  Padding(
-                                    padding: const EdgeInsets.all(
-                                        AppPadding.miniSpacer - 5),
+                            if (country != null && country is Country) {
+                              selectedCountry = country;
+
+                              setState(() {});
+                            }
+                                    },
                                     child: Row(
                                       children: [
-                                        selectedCountry.name.isNotEmpty? Text(selectedCountry.flag): const SizedBox(),
+                                        selectedCountry.name.isNotEmpty
+                                            ? Text(
+                                                selectedCountry.flag,
+                                                style: const TextStyle(
+                                                    fontSize:
+                                                        AppPadding.miniSpacer +
+                                                            8),
+                                              )
+                                            : const SizedBox(),
                                         const Icon(
-                                            Icons.keyboard_arrow_down_outlined),
+                                          Icons.keyboard_arrow_down_outlined,
+                                          size: AppPadding.miniSpacer + 5,
+                                        ),
                                       ],
                                     ),
                                   ),
                                 ),
-                                const SizedBox(
-                                  width: AppPadding.miniSpacer,
-                                ),
-                                Text(selectedCountry.name.isNotEmpty
-                                    ? selectedCountry.phoneCode
-                                    : "+"),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(
+                                width: AppPadding.miniSpacer,
+                              ),
+                              Text(selectedCountry.name.isNotEmpty
+                                  ? selectedCountry.phoneCode
+                                  : "+"),
+                                    const SizedBox(
+                                width: AppPadding.miniSpacer,
+                              ),
+                                 SizedBox(
+                                  width: size.width*0.4,
+                                   child: TextField(
+                                                       style: const TextStyle(
+                                                         color: AppColors.onBackground,
+                                                         fontFamily: sourceSans,
+                                                       ),
+                                                       controller: phoneController,
+                                                       keyboardType: TextInputType.phone,
+                                                       decoration: const InputDecoration(
+                                                         hintText: "",
+                                                         hintStyle: TextStyle(
+                                                           color: AppColors.gray,
+                                                           fontFamily: sourceSans,
+                                                         ),
+                                                         filled: true,
+                                                         fillColor: AppColors.background,
+                                                         focusedBorder: InputBorder.none,
+                                                         enabledBorder: InputBorder.none,
+                                                         
+                                                       ),
+                                                       onChanged: (value) {
+                                                         setState(() {
+                                                         });
+                                                       },
+                                                     ),
+                                 ),
+                            ],
                           ),
                         ),
                         const SizedBox(

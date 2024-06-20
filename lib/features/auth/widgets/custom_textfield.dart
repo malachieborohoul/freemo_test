@@ -107,20 +107,14 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                                 color: AppColors.onBackground,
                               ))
                     : null,
-                errorBorder: const OutlineInputBorder(
+                errorBorder:  OutlineInputBorder(
                   borderSide:
                       BorderSide(color: Colors.red), // Couleur de la bordure
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                  ),
+                  borderRadius: BorderRadius.circular(10)
                 ),
-                focusedErrorBorder: const OutlineInputBorder(
+                focusedErrorBorder:  OutlineInputBorder(
                   borderSide: BorderSide(color: AppColors.defaultBorder),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                  ),
+                  borderRadius: BorderRadius.circular(10)
                 ),
               ),
               validator: (val) {

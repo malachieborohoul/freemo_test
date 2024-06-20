@@ -158,7 +158,7 @@ class _SearchCountriesSreenState extends State<SearchCountriesSreen> {
                                 ),
                               ),
                               onTap: () {
-                                Navigator.pop(context,listView[i]);
+                                {Navigator.pop(context,listView[i]);}
                               },
                             );
                           },
