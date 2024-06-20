@@ -2,8 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:freemo_test/features/auth/screens/login_screen.dart';
 import 'package:freemo_test/features/auth/screens/register_screen.dart';
+import 'package:freemo_test/features/auth/screens/search_countries_sreen.dart';
 import 'package:freemo_test/features/auth/screens/verification_screen.dart';
 import 'package:freemo_test/features/dashboard/screens/dashboard_screen.dart';
+import 'package:freemo_test/models/country.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
@@ -44,6 +46,16 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
           ),
         );
       });
+
+        case SearchCountriesSreen.routeName:
+      return PageRouteBuilder(pageBuilder: (_, animation, __) {
+        return FadeTransition(
+          opacity: animation,
+          child: SearchCountriesSreen(
+          ),
+        );
+      });
+
 
 
     default:
