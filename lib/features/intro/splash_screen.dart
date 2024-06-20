@@ -6,6 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:freemo_test/constants/color.dart';
 import 'package:freemo_test/constants/utils.dart';
 import 'package:freemo_test/features/auth/screens/register_screen.dart';
+import 'package:freemo_test/features/dashboard/screens/dashboard_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -38,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
     setState(() {
 
  Future.delayed(const Duration(milliseconds: 1000), () {
-          Navigator.pushReplacementNamed(context, RegisterScreen.routeName);
+          Navigator.pushReplacementNamed(context, DashboardScreen.routeName);
         });
     });
   }
