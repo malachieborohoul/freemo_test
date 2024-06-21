@@ -9,7 +9,7 @@
   
   <h2>Authentification Screens</h2>
   <div class="row">
-  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 01.58.39.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 .png" width="200px">
   <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 01.58.39.png" width="200px">
   <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.00.21.png" width="200px">
   <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.13.02.png" width="200px">
