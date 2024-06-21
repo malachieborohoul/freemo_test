@@ -1,23 +1,26 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:freemo_test/constants/color.dart';
 import 'package:freemo_test/constants/global.dart';
 import 'package:freemo_test/common/widgets/custom_regular_title.dart';
 
 class CustomTextfield extends StatefulWidget {
-  CustomTextfield({
-    super.key,
-    required this.controller,
-    this.textInputType = TextInputType.text,
-    required this.hintText,
-    this.isPassword = false,
-    this.selected = false,
-    this.codeKey = 1,
-    this.password = "",
-    this.isSuffix = false,
-    this.readOnly = false,
-  });
+  CustomTextfield(
+      {super.key,
+      required this.controller,
+      this.textInputType = TextInputType.text,
+      required this.hintText,
+      this.isPassword = false,
+      this.selected = false,
+      this.codeKey = 1,
+      this.password = "",
+      this.isSuffix = false,
+      this.isPrefix = false,
+      this.readOnly = false,
+      this.prefixIcon = Icons.lock_outline,
+      this.prefixIconColor=AppColors.gray, 
+       this.hasBorder=true
+      
+      });
 
   final TextEditingController controller;
   final TextInputType textInputType;
@@ -25,7 +28,11 @@ class CustomTextfield extends StatefulWidget {
   final int codeKey;
   final String password;
   final bool isSuffix;
+  final bool isPrefix;
+  final IconData prefixIcon;
+  final Color prefixIconColor;
   final bool readOnly;
+  final bool hasBorder;
 
   bool isPassword;
   bool selected;
@@ -39,20 +46,17 @@ class _CustomTextfieldState extends State<CustomTextfield> {
 
   @override
   Widget build(BuildContext context) {
-
     return ValueListenableBuilder<bool>(
         valueListenable: notiferValidated,
         builder: (context, value, child) {
           return Container(
             decoration: BoxDecoration(
                 border: Border(
-                    bottom: value
-                        ? BorderSide.none
-                        : const BorderSide(color: AppColors.defaultBorder))),
+                    bottom:  BorderSide.none
+                        )),
             child: TextFormField(
               style: const TextStyle(
-                  color: AppColors.onBackground,
-                  fontFamily: sourceSans),
+                  color: AppColors.onBackground, fontFamily: poppins),
               readOnly: widget.readOnly,
               maxLines: 1,
               controller: widget.controller,
@@ -66,31 +70,31 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                 suffix: widget.isSuffix
                     ? const CustomRegularTitle(
                         title: "Hours",
-                        family: sourceSans,
+                        family: poppins,
                         color: AppColors.onBackground,
                         size: 15,
                       )
                     : null,
                 hintText: widget.hintText,
-                hintStyle:
-                    const TextStyle(color: AppColors.gray, fontFamily: sourceSans, fontSize: 13),
+                hintStyle: const TextStyle(
+                    color: AppColors.gray,
+                    fontFamily: poppins,
+                    fontSize: 13),
                 filled: true,
                 fillColor: AppColors.background,
-                focusedBorder:  OutlineInputBorder(
-                  borderSide: 
-                       BorderSide.none,
-                  borderRadius: BorderRadius.circular(10)
-                ),
-                enabledBorder:  OutlineInputBorder(
-                  borderSide: const BorderSide(
-                      width: 0.5,
-                      color: AppColors.defaultBorder),
-                 borderRadius: BorderRadius.circular(10)
-                ),
-                prefixIcon: const Icon(
-                                Icons.lock_outline,
-                                color: AppColors.gray,
-                              ),
+                focusedBorder: widget.hasBorder? OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(10)):InputBorder.none,
+                enabledBorder: widget.hasBorder? OutlineInputBorder(
+                    borderSide: const BorderSide(
+                        width: 0.5, color: AppColors.defaultBorder),
+                    borderRadius: BorderRadius.circular(10)):InputBorder.none,
+                prefixIcon: widget.isPrefix
+                    ? Icon(
+                        widget.prefixIcon,
+                        color: widget.prefixIconColor,
+                      )
+                    : SizedBox(),
                 suffixIcon: widget.isPassword
                     ? IconButton(
                         onPressed: () {
@@ -107,47 +111,20 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                                 color: AppColors.onBackground,
                               ))
                     : null,
-                errorBorder:  OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Colors.red), // Couleur de la bordure
-                  borderRadius: BorderRadius.circular(10)
-                ),
-                focusedErrorBorder:  OutlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.defaultBorder),
-                  borderRadius: BorderRadius.circular(10)
-                ),
+                errorBorder:  widget.hasBorder? OutlineInputBorder(
+                    borderSide: const BorderSide(
+                        color: Colors.red),
+                    borderRadius: BorderRadius.circular(10)): InputBorder.none,
+                focusedErrorBorder:  widget.hasBorder?OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: AppColors.defaultBorder),
+                    borderRadius: BorderRadius.circular(10)): InputBorder.none,
               ),
               validator: (val) {
                 switch (widget.codeKey) {
+                
+
                   case 1:
-                    if (val!.isEmpty ||
-                        !RegExp(r'^[a-z A-Z]+$').hasMatch(val)) {
-                      notiferValidated.value = true;
-                      return "Please enter a correct Full Name";
-                    } else {
-                      return null;
-                    }
-
-                  case 2:
-                    if (val!.isEmpty ||
-                        !RegExp(r'^[\w\.-]+@[\w\.-]+\.\w+$').hasMatch(val)) {
-                      notiferValidated.value = true;
-
-                      return "Please enter a correct Email Adress";
-                    } else {
-                      return null;
-                    }
-
-                  case 3:
-                    if (val!.isEmpty || !RegExp(r'^\d+$').hasMatch(val)) {
-                      notiferValidated.value = true;
-
-                      return "Please enter a correct phone number";
-                    } else {
-                      return null;
-                    }
-
-                  case 4:
                     if (val!.isEmpty || !RegExp(r'.*').hasMatch(val)) {
                       notiferValidated.value = true;
 
@@ -157,7 +134,7 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                     } else {
                       return null;
                     }
-                  case 5:
+                  case 2:
                     if (val != widget.password) {
                       notiferValidated.value = true;
 
@@ -166,14 +143,7 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                       return null;
                     }
 
-                  case 6:
-                    if (val!.isEmpty || !RegExp(r'^\d+$').hasMatch(val)) {
-                      notiferValidated.value = true;
-
-                      return "Please enter a  duration";
-                    } else {
-                      return null;
-                    }
+               
                   default:
                 }
                 return null;

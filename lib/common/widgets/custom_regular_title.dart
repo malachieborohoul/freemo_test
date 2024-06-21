@@ -8,7 +8,7 @@ class CustomRegularTitle extends StatelessWidget {
       required this.title,
       this.color = AppColors.onBackground,
       this.size = 20,
-      this.family = sourceSans,
+      this.family = poppins,
       this.weight=FontWeight.bold
       });
   final String title;
@@ -19,14 +19,16 @@ class CustomRegularTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int maxLength = 25;
     return Text(
-      title,
+      title.length>maxLength? "${title.substring(0,maxLength)}...": title,
       style: TextStyle(
           height: 1,
           fontFamily: family,
           fontSize: size,
           color: color,
           fontWeight: weight),
+          
     );
   }
 }

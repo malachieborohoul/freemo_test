@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freemo_test/common/widgets/custom_carousel_article_loading.dart';
 import 'package:freemo_test/common/widgets/custom_regular_title.dart';
 import 'package:freemo_test/constants/color.dart';
 import 'package:freemo_test/constants/global.dart';
@@ -135,63 +136,75 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   const SizedBox(
                     height: AppPadding.smallSpacer,
                   ),
-                  CustomRegularTitle(title: "Upcoming actions"),
+                  const CustomRegularTitle(title: "Upcoming actions"),
                   const SizedBox(
                     height: AppPadding.miniSpacer,
                   ),
-                  Container(
-                      decoration: BoxDecoration(
-                        color: AppColors.defaultBorder.withOpacity(0.2),
-                        borderRadius: const BorderRadius.all(
-                            const Radius.circular(AppPadding.miniSpacer)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(AppPadding.miniSpacer),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "${assetImg}article.png",
-                              height: AppPadding.spacer,
-                              width: AppPadding.spacer,
-                            ),
-                            const SizedBox(
-                              width: AppPadding.miniSpacer,
-                            ),
-                            Expanded(
-                                child: FutureBuilder(
-                                    future: articles,
-                                    builder: (context, snapshot) {
-                                      if (snapshot.connectionState ==
-                                          ConnectionState.done) {
-                                        return ListView.builder(
-                                          shrinkWrap: true,
-                                            itemBuilder: (context, i) {
-                                          return const Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                  FutureBuilder(
+                      future: articles,
+                      builder: (context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.done) {
+                          return SizedBox(
+                            height: size.height * 0.5,
+                            child: ListView.builder(
+                                itemCount: snapshot.data!.length,
+                                itemBuilder: (context, i) {
+                                  return Padding(
+                                    padding: const EdgeInsets.only(bottom: AppPadding.miniSpacer),
+                                    child: Container(
+                                        decoration: BoxDecoration(
+                                          color: AppColors.defaultBorder
+                                              .withOpacity(0.2),
+                                          borderRadius: const BorderRadius.all(
+                                              Radius.circular(
+                                                  AppPadding.miniSpacer)),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(
+                                              AppPadding.miniSpacer),
+                                          child: Row(
                                             children: [
-                                              CustomRegularTitle(
-                                                title: "TM Soluions",
-                                                size: AppPadding.miniSpacer + 5,
+                                              Image.asset(
+                                                "${assetImg}article.png",
+                                                height: AppPadding.spacer,
+                                                width: AppPadding.spacer,
                                               ),
                                               const SizedBox(
-                                                height: AppPadding.miniSpacer,
+                                                width: AppPadding.miniSpacer,
                                               ),
-                                              CustomRegularTitle(
-                                                title: "Come lets ove be ddgud",
-                                                weight: FontWeight.normal,
-                                                size: AppPadding.miniSpacer,
-                                              ),
+                                               Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  CustomRegularTitle(
+                                                    title: snapshot.data![i].title,
+                                                    size:
+                                                        AppPadding.miniSpacer +
+                                                            5,
+                                                  ),
+                                                  const SizedBox(
+                                                    height:
+                                                        AppPadding.miniSpacer,
+                                                  ),
+                                                  CustomRegularTitle(
+                                                    title:
+                                                        snapshot.data![i].body,
+                                                    weight: FontWeight.normal,
+                                                    size: AppPadding.miniSpacer,
+                                                  ),
+                                                ],
+                                              )
                                             ],
-                                          );
-                                        });
-                                      } else {
-                                        return CircularProgressIndicator();
-                                      }
-                                    }))
-                          ],
-                        ),
-                      )),
+                                          ),
+                                        )),
+                                  );
+                                }),
+                          );
+                        } else {
+                          return  CustomCarouselArticleLoading();
+                        }
+                      }),
                 ],
               )),
         )),

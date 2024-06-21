@@ -52,7 +52,7 @@ class _CustomTextfieldState extends State<CustomTextfield> {
             child: TextFormField(
               style: const TextStyle(
                   color: AppColors.onBackground,
-                  fontFamily: sourceSans),
+                  fontFamily: poppins),
               readOnly: widget.readOnly,
               maxLines: 1,
               controller: widget.controller,
@@ -66,14 +66,14 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                 suffix: widget.isSuffix
                     ? const CustomRegularTitle(
                         title: "Hours",
-                        family: sourceSans,
+                        family: poppins,
                         color: AppColors.onBackground,
                         size: 15,
                       )
                     : null,
                 hintText: widget.hintText,
                 hintStyle:
-                    const TextStyle(color: AppColors.gray, fontFamily: sourceSans, fontSize: 13),
+                    const TextStyle(color: AppColors.gray, fontFamily: poppins, fontSize: 13),
                 filled: true,
                 fillColor: AppColors.background,
                 focusedBorder:  OutlineInputBorder(

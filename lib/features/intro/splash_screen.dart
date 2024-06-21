@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
    
     setState(() {
 
- Future.delayed(const Duration(milliseconds: 1000), () {
+ Future.delayed(const Duration(milliseconds: 1500), () {
           Navigator.pushReplacementNamed(context, RegisterScreen.routeName);
         });
     });

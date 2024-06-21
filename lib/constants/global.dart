@@ -10,6 +10,7 @@ const String qrcode = "6385e2e0ad3b73ad4d402699";
 const String playfair = "Playfair Display";
 
 const String sourceSans = "Source Sans 3";
+const String poppins = "Poppins";
 
 
 CountryService countryService = CountryService();

@@ -23,21 +23,29 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  TextEditingController fullNameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController cpasswordController = TextEditingController();
+
+  Color phoneBorderColor = AppColors.defaultBorder;
+  Color selectCountryColor = AppColors.defaultBorder;
 
   final _registerFormKey = GlobalKey<FormState>();
 
   bool isLoading = false;
 
-  void registerUser() {}
+  void registerUser() {
+    isLoading = false;
+    Navigator.pushNamed(context, DashboardScreen.routeName);
+  }
+
   Country selectedCountry = Country(
       name: "", abbreviation: "", flag: "", phoneCode: "", maxPhoneLength: 0);
   @override
   void dispose() {
+    phoneController.dispose();
+    passwordController.dispose();
+    cpasswordController.dispose();
     super.dispose();
   }
 
@@ -132,97 +140,135 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const SizedBox(
                           height: AppPadding.miniSpacer - 5,
                         ),
-                        Container(
-                          height: AppPadding.appPadding + 30,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border:
-                                Border.all(color: AppColors.defaultBorder),
-                          ),
-                          child: Row(
-                            children: [
-                              Container(
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    bottomLeft: Radius.circular(10),
-                                  ),
-                                  color: AppColors.defaultBorder
-                                      .withOpacity(0.4),
+                        Row(
+                          children: [
+                            Container(
+                              height: AppPadding.appPadding + 38,
+                              decoration:  BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(10),
+                                  bottomLeft: Radius.circular(10),
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(
-                                      AppPadding.miniSpacer - 5),
-                                  child: GestureDetector(
-                                    onTap: ()async{
-                                         var country = await Navigator.pushNamed(
-                                context, SearchCountriesSreen.routeName);
+                                border: Border(
+                                    top: BorderSide(
+                                        color: selectCountryColor),
+                                    left: BorderSide(
+                                        color: selectCountryColor),
+                                    bottom: BorderSide(
+                                        color: selectCountryColor)),
+                              ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: double.infinity,
+                                    decoration: BoxDecoration(
+                                      borderRadius: const BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        bottomLeft: Radius.circular(10),
+                                      ),
+                                      color: AppColors.defaultBorder
+                                          .withOpacity(0.4),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(
+                                          AppPadding.miniSpacer - 5),
+                                      child: GestureDetector(
+                                        onTap: () async {
+                                          var country =
+                                              await Navigator.pushNamed(
+                                                  context,
+                                                  SearchCountriesSreen
+                                                      .routeName);
 
-                            if (country != null && country is Country) {
-                              selectedCountry = country;
+                                          if (country != null &&
+                                              country is Country) {
+                                            selectedCountry = country;
 
-                              setState(() {});
-                            }
-                                    },
-                                    child: Row(
-                                      children: [
-                                        selectedCountry.name.isNotEmpty
-                                            ? Text(
-                                                selectedCountry.flag,
-                                                style: const TextStyle(
-                                                    fontSize:
-                                                        AppPadding.miniSpacer +
+                                            setState(() {
+                              selectCountryColor = AppColors.defaultBorder;
+
+                                            });
+                                          }
+                                        },
+                                        child: Row(
+                                          children: [
+                                            selectedCountry.name.isNotEmpty
+                                                ? Text(
+                                                    selectedCountry.flag,
+                                                    style: const TextStyle(
+                                                        fontSize: AppPadding
+                                                                .miniSpacer +
                                                             8),
-                                              )
-                                            : const SizedBox(),
-                                        const Icon(
-                                          Icons.keyboard_arrow_down_outlined,
-                                          size: AppPadding.miniSpacer + 5,
+                                                  )
+                                                : const SizedBox(
+                                                    width:
+                                                        AppPadding.miniSpacer,
+                                                  ),
+                                            const Icon(
+                                              Icons
+                                                  .keyboard_arrow_down_outlined,
+                                              size: AppPadding.miniSpacer + 5,
+                                            ),
+                                          ],
                                         ),
-                                      ],
+                                      ),
                                     ),
                                   ),
+                                  const SizedBox(
+                                    width: AppPadding.miniSpacer,
+                                  ),
+                                  Text(selectedCountry.name.isNotEmpty
+                                      ? selectedCountry.phoneCode
+                                      : "+"),
+                                  const SizedBox(
+                                    width: AppPadding.miniSpacer,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border(
+                                    top: BorderSide(color: phoneBorderColor),
+                                    bottom: BorderSide(color: phoneBorderColor),
+                                    right: BorderSide(color: phoneBorderColor),
+                                  ),
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0),
+                                  ),
+                                ),
+                                child: TextField(
+                                  onChanged: (value) {
+                                    if (value.isEmpty) {
+                                      setState(() {
+                                        phoneBorderColor = AppColors.primary;
+                                      });
+                                    } else {
+                                      setState(() {
+                                        phoneBorderColor =
+                                            AppColors.defaultBorder;
+                                      });
+                                    }
+                                  },
+                                  keyboardType: TextInputType.phone,
+                                  controller: phoneController,
+                                  decoration: const InputDecoration(
+                                    hintText: "0000 0000",
+                                    hintStyle: TextStyle(
+                                        color: AppColors.defaultBorder,
+                                        fontSize: AppPadding.miniSpacer + 5),
+
+                                    contentPadding: EdgeInsets.symmetric(
+                                        horizontal: 12, vertical: 16),
+                                    border: InputBorder
+                                        .none, // Supprime la bordure par défaut du TextField
+                                  ),
                                 ),
                               ),
-                              const SizedBox(
-                                width: AppPadding.miniSpacer,
-                              ),
-                              Text(selectedCountry.name.isNotEmpty
-                                  ? selectedCountry.phoneCode
-                                  : "+"),
-                                    const SizedBox(
-                                width: AppPadding.miniSpacer,
-                              ),
-                                 SizedBox(
-                                  width: size.width*0.4,
-                                   child: TextField(
-                                                       style: const TextStyle(
-                                                         color: AppColors.onBackground,
-                                                         fontFamily: sourceSans,
-                                                       ),
-                                                       controller: phoneController,
-                                                       keyboardType: TextInputType.phone,
-                                                       decoration: const InputDecoration(
-                                                         hintText: "",
-                                                         hintStyle: TextStyle(
-                                                           color: AppColors.gray,
-                                                           fontFamily: sourceSans,
-                                                         ),
-                                                         filled: true,
-                                                         fillColor: AppColors.background,
-                                                         focusedBorder: InputBorder.none,
-                                                         enabledBorder: InputBorder.none,
-                                                         
-                                                       ),
-                                                       onChanged: (value) {
-                                                         setState(() {
-                                                         });
-                                                       },
-                                                     ),
-                                 ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                         const SizedBox(
                           height: AppPadding.smallSpacer,
@@ -235,10 +281,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           height: AppPadding.miniSpacer - 5,
                         ),
                         CustomTextfield(
+                          isPrefix: true,
                           controller: passwordController,
                           hintText: "Enter your password",
                           isPassword: true,
-                          codeKey: 4,
                         ),
                         const SizedBox(
                           height: AppPadding.smallSpacer,
@@ -251,24 +297,30 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           height: AppPadding.miniSpacer - 5,
                         ),
                         CustomTextfield(
+                          isPrefix: true,
                           password: passwordController.text,
                           controller: cpasswordController,
                           hintText: "Confirm your password",
                           isPassword: true,
-                          codeKey: 5,
+                          codeKey: 2,
                         ),
                         const SizedBox(
                           height: AppPadding.smallSpacer,
                         ),
                         GestureDetector(
                           onTap: () {
-                            if (_registerFormKey.currentState!.validate()) {
-                              registerUser();
+                            if (_registerFormKey.currentState!.validate() &&
+                                phoneController.text.isNotEmpty &&
+                                selectedCountry.name.isNotEmpty) {
                               setState(() {
                                 isLoading = true;
+                                registerUser();
                               });
-                              // Navigator.pushNamed(
-                              //     context, VerificationScreen.routeName);
+                            } else {
+                              setState(() {
+                              selectCountryColor = AppColors.primary;
+                                
+                              });
                             }
                           },
                           child: isLoading
@@ -297,7 +349,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               onTap: () {
                                 Navigator.pushReplacementNamed(
                                   context,
-                                  LoginScreen.routeName,
+                                  DashboardScreen.routeName,
                                 );
                               },
                               child: const Text(

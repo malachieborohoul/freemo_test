@@ -1,16 +1,28 @@
 # freemo_test
 
-A new Flutter project.
+<div class="col">
+  
+  <h2>Splash Screen</h2>
+  <div class="row">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 01.58.20.png" width="200px">
+  <div>
+  
+  <h2>Authentification Screens</h2>
+  <div class="row">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 01.58.39.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 01.58.39.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.00.21.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.13.02.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.15.58.png" width="200px">
+  <div>
+  
+  <h2>Home Screens</h2>
+  <div class="row">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.14.08.png" width="200px">
+  <img src="/assets/screenshots/Capture d’écran 2024-06-21 à 02.26.14.png" width="200px">
+  <div>
+  
+  
+</div>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

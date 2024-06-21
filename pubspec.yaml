@@ -91,6 +91,11 @@ flutter:
           weight: 600
         - asset: assets/fonts/SourceSans3/SourceSans3-Bold.ttf
           weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

@@ -20,7 +20,7 @@ class CustomCard extends StatelessWidget {
       decoration:  BoxDecoration(
       color: backgroundColor,
 
-        borderRadius: BorderRadius.all(Radius.circular(AppPadding.miniSpacer)),
+        borderRadius: const BorderRadius.all(Radius.circular(AppPadding.miniSpacer)),
       ),
       child: Padding(
         padding:  EdgeInsets.symmetric(vertical: size.width*0.08,horizontal: size.width*0.1),
@@ -29,7 +29,7 @@ class CustomCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Icon(Icons.add, color: AppColors.background, size: AppPadding.miniSpacer+5,),
-            SizedBox(height: AppPadding.miniSpacer,),
+            const SizedBox(height: AppPadding.miniSpacer,),
             CustomRegularTitle(
               size: AppPadding.miniSpacer+5,
               title: title,
