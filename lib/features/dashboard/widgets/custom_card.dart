@@ -31,7 +31,7 @@ class CustomCard extends StatelessWidget {
             const Icon(Icons.add, color: AppColors.background, size: AppPadding.miniSpacer+5,),
             const SizedBox(height: AppPadding.miniSpacer,),
             CustomRegularTitle(
-              size: AppPadding.miniSpacer+5,
+              size: AppPadding.miniSpacer+4,
               title: title,
               color: textColor,
             ),
