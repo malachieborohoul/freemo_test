@@ -24,7 +24,7 @@
 
   <h2>Demo</h2>
   <div class="row">
-    <img src="clideo_editor_a2e63910213f45e0bb7aaa7e9d55ec3b.gif">
+    <img src="/assets/screenshots/clideo_editor_a2e63910213f45e0bb7aaa7e9d55ec3b.gif">
   <div>
   
   
