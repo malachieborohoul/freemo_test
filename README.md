@@ -1,5 +1,5 @@
-# freemo_test
-
+# freemo_test screenshots and gif demo
+<h1>Screenshots and Demo</h1>
 <div class="col">
   
   <h2>Splash Screen</h2>
